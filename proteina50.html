@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="./imgenes/ico.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Proteina 50%</title>
+</head>
+<body class="prote">
+    <div >
+        <header class="aaa">
+            <a href="index.html"><img src="./imgenes/bx-share.svg" alt=""></a>
+            <img src="./imgenes/proteina.png" alt="" class="icon">
+        </header>
+        <h2>¿Qué proteina animal vas a usar?</h2>
+        <div class="btn-group btn-group-lg" role="group" aria-label="Basic mixed styles example" id="prote">
+            <button type="button" class="btn btn-danger" onclick="pollo();return false">Pollo</button>
+            <button type="button" class="btn btn-danger" onclick="bife();return false">Bife</button>
+            <button type="button" class="btn btn-danger" onclick="milanesa();return false">Milanesa</button>
+            <button type="button" class="btn btn-danger" onclick="atun();return false">Pescado</button>
+        </div><p id="desc-proteina"></p><br>
+        <div id="guarnicion">
+            <h2>¿Con que la vas a acompañar?</h2>
+            <div class="btn-group btn-group-lg" role="group" aria-label="Basic mixed styles example" id="guarni">
+                <button type="button" class="btn btn-success" onclick="salteado();return false">Salteado</button>
+                <button type="button" class="btn btn-success" onclick="ensalada();return false">Ensalada</button>
+                <button type="button" class="btn btn-success" onclick="pure();return false">Pure</button>
+            </div>
+        </div><br>
+        <h2 id="opciones"></h2><br>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example" id="salteado">
+            <button type="button" class="btn btn-warning" onclick="zapallitos();return false">Zapallitos</button>
+            <button type="button" class="btn btn-warning" onclick="champis();return false">Champiñones</button>
+            <button type="button" class="btn btn-warning" onclick="mix();return false">Mix de verduras</button>
+            <button type="button" class="btn btn-warning" onclick="gril();return false">Verduras grilladas</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example" id="ensalada">
+            <button type="button" class="btn btn-warning" onclick="repollo();return false">Repollo</button>
+            <button type="button" class="btn btn-warning" onclick="remolacha();return false">Remolacha</button>
+            <button type="button" class="btn btn-warning" onclick="brocoli();return false">Brocoli</button>
+            <button type="button" class="btn btn-warning" onclick="zanahoria();return false">Zanahoria</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example" id="pure">
+            <button type="button" class="btn btn-warning" onclick="calabaza();return false">Calabaza</button>
+            <button type="button" class="btn btn-warning" onclick="calabazaybrocoli();return false">Calabaza y Brocoli</button>
+        </div>
+            <p id="desc-guarnicion"></p><br>
+        <div class="resultado">
+            <img src="" alt="" id="verdura">
+            <img src="" alt="" id="proteina">
+        </div>
+    </div>
+    <footer><h3>MCodes.net</h3></footer>
+    <script src="./proteina.js"></script>
+</body>
+</html>
